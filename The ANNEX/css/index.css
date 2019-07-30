@@ -1,0 +1,668 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --mainGreen: #3ECCB5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.active {
+  color: var(--mainGreen) !important;
+}
+
+/* HEADER STARTER */
+.show {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.mynav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #212121;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1 !important;
+}
+
+.mynav li {
+  line-height: 20px;
+  float: right;
+  padding: 20px 16px;
+}
+
+.mynav a {
+  color: white;
+  text-decoration: none;
+}
+
+.brand {
+  float: left !important;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.brand span {
+  color: var(--mainGreen);
+}
+
+a:hover {
+  color: var(--mainGreen);
+  transition: 1s ease;
+}
+
+/* HEADER ENDED */
+/* WELCOME STARTED */
+.welcome {
+  background-image: url("../image/welcome.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.welcomeP {
+  padding-top: 27%;
+}
+
+.wp1 {
+  display: inline;
+  color: white;
+  font-size: 120px;
+  text-align: center;
+  letter-spacing: 3px;
+  /* margin-top: 300px; */
+}
+
+.wp2 {
+  display: inline;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  /* margin-bottom: 20px; */
+}
+
+.welcomeP button {
+  background-color: var(--mainGreen);
+  padding: 15px 55px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 15px;
+}
+
+.welcomeP button:hover {
+  background-color: #379180;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+/* WELCOE ENDED */
+/* ABOUT US */
+.about {
+  background-image: url("../image/main2.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 150px;
+}
+
+.aboutUS {
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+}
+
+.aboutText {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: .9em;
+  padding-bottom: 60px;
+}
+
+.aboutText h1 {
+  padding-top: 60px;
+  font-size: 3em !important;
+}
+
+/* ABOUT US END */
+/* COMMUNITY */
+.community {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+
+.comtext {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.com1 {
+  font-size: 3em !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.com2 {
+  line-height: 25px;
+  padding-bottom: 70px;
+}
+
+/* COMMUNITY END */
+/* IMAGES */
+.imagesContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.imagesContainer img {
+  width: 30%;
+  height: 280px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/*  IMAGES END*/
+/* SPACES */
+.spaces {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  background-color: var(--mainGreen);
+}
+
+.spacestext {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 70px;
+  color: white;
+}
+
+.space1 {
+  font-size: 3em !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.space2 {
+  line-height: 25px;
+}
+
+/* SPACES END */
+/* BLURCONTAINER */
+.blurContainer {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+margin-left: 13%;
+}
+
+.cont1 {
+  margin-left: 4%;
+  padding: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.layout1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  line-height: 330px;
+  /* visibility: hidden; */
+  /* display: none; */
+  opacity: 0;
+}
+
+.cont1:hover img {
+  filter: blur(5px);
+  transition: 1s ease;
+}
+
+.cont1 img {
+  width: 100%;
+  height: 400px;
+}
+
+.cont1:hover .layout1 {
+  transition: 1s ease;
+  /* visibility: visible; */
+  /* display: block;  */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cont2 {
+  margin-right: 3%;
+  padding: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.layout2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  line-height: 330px;
+  /* visibility: hidden; */
+  /* display: none; */
+  opacity: 0;
+}
+
+.cont2:hover img {
+  filter: blur(5px);
+  transition: 1s ease;
+}
+
+.cont2 img {
+  width: 100%;
+  height: 400px;
+}
+
+.cont2:hover .layout2 {
+  transition: 1s ease;
+  /* visibility: visible; */
+  /* display: block;  */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cont3 {
+  margin-left: 4%;
+  padding: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.layout3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  line-height: 330px;
+  /* visibility: hidden; */
+  /* display: none; */
+  opacity: 0;
+}
+
+.cont3:hover img {
+  filter: blur(5px);
+  transition: 1s ease;
+}
+
+.cont3 img {
+  width: 100%;
+  height: 400px;
+}
+
+.cont3:hover .layout3 {
+  transition: 1s ease;
+  /* visibility: visible; */
+  /* display: block;  */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cont4 {
+  margin-right: 3%;
+  padding: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.layout4 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  line-height: 330px;
+  /* visibility: hidden; */
+  /* display: none; */
+  opacity: 0;
+}
+
+.cont4:hover img {
+  filter: blur(5px);
+  transition: 1s ease;
+}
+
+.cont4 img {
+  width: 100%;
+  height: 400px;
+}
+
+.cont4:hover .layout4 {
+  transition: 1s ease;
+  /* visibility: visible; */
+  /* display: block;  */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.layout1, .layout2, .layout3, .layout4, p {
+  text-align: center;
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.layout1, .layout2, .layout3, .layout4, footer {
+  font-size: 1.2em;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0;
+  line-height: 100px;
+}
+
+.layout1, .layout2, .layout3, .layout4, footer .share {
+  float: right !important;
+}
+
+.layout1, .layout2, .layout3, .layout4, footer .like {
+  float: left !important;
+}
+
+.cont1, .cont2, .cont3, .cont4 img {
+  box-sizing: border-box;
+}
+
+.layout1, .layout2, .layout3, .layout4 {
+  box-sizing: border-box;
+}
+
+/* BLURCONTAINER END */
+/* MEMBERSHIP */
+.membership-section {
+  margin-bottom: 270px;
+}
+
+.membership-section header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.membership-section h1 {
+  font-size: 3em !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.membership-section h1 {
+  padding-top: 80px;
+}
+
+.membership-content {
+padding-left: 32%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.membership-content div {
+  display: table;
+  float: left;
+}
+
+.membership-content div i{
+margin-right: 2%;
+}
+
+.membership-content i {
+  font-size: 40px;
+}
+
+.membership-content span {
+  vertical-align: middle;
+  display: table-cell;
+  font-weight: lighter;
+  font-size: .9em;
+}
+
+.first-row div, .second-row div {
+  padding: 30px 20px;
+}
+
+.second-row {
+  padding-bottom: 80px;
+}
+
+/* MEMBERSHIP END */
+/* CONTACT */
+.contact-section {
+  width: 100%;
+  height: 500px;
+  background-image: url(../image/callcenter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.contact-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-content {
+  color: white;
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em !important;
+  margin-top: 80px;
+}
+
+.contact-content form {
+  margin-top: 20px;
+}
+
+.contact-content input {
+  padding: 10px 20px;
+  width: 410px;
+  background-color: white;
+  opacity: .6;
+  outline-color: transparent;
+  font-size: 15px;
+}
+
+.contact-content input::placeholder {
+  font-size: 15px;
+  text-align: left;
+}
+
+.contact-content button {
+  margin-top: 5px;
+  padding: 10px 120px;
+  background-color: var(--mainGreen);
+  border-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+}
+
+.contact-content button:hover {
+  background-color: #379180;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+/* CONTACT END */
+/* FOOTER */
+.my-footer {
+  width: 100%;
+  background-color: #333333;
+  color: #BAB8B8;
+  font-size: 1em;
+}
+
+.nrktk {
+  text-align: left;
+  padding: 10px 40px;
+}
+
+.socialmedia {
+  float: right !important;
+  padding: 0 40px;
+  letter-spacing: 1em;
+  font-size: 1.7em;
+}
+
+/* FOOTER END */
+@media only screen and (max-width: 600px) {
+  * {
+    overflow: hidden !important;
+  }
+
+  .right-side {
+    visibility: hidden;
+  }
+
+  .mynav {
+    height: 60px;
+  }
+
+  .brand {
+    margin-left: 70px;
+  }
+
+  .welcome {
+    background-size: cover;
+    height: 400px;
+  }
+
+  .welcomeP {
+    padding-top: 250px;
+  }
+
+  .wp1 {
+    font-size: 2.2em;
+  }
+
+  .wp2 {
+    font-size: .7em;
+  }
+
+  .welcomeP button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  .about {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .aboutUS {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .aboutText {
+    font-size: .8em;
+    padding-bottom: 60px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .aboutText h1 {
+    font-size: 2em;
+  }
+.community{
+  width: 100%;
+  margin: 0 auto;
+}
+.com1{
+  font-size: 2em !important;
+}
+.com2{
+  font-size: 1em !important;
+}
+.imagesContainer img{
+width: 100%;
+}
+.spaces{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cont1, .cont2, .cont3, .cont4{
+  width: 100%;
+}
+.membership-section{
+  text-align: center !important;
+  width: 90%;
+  margin: 0 auto;
+}
+.membership-section h1{
+    font-size: 2em !important;
+}
+.contact-content input{
+  padding: 5px 0;
+  background-color: white;
+  outline-color: transparent;
+  font-size: 15px;
+}
+.contact-content input::placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+.contact-content button{
+    margin-top: 5px;
+    padding: 5px 100px;
+}
+.contact-content form{
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+}
